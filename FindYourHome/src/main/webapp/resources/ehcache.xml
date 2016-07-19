@@ -1,0 +1,24 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" 
+	updateCheck="true"
+	monitoring="autodetect" 
+	dynamicConfig="true">
+
+	<diskStore path="java.io.tmpdir" />
+	
+	<defaultCache eternal="true" maxElementsInMemory="100" overflowToDisk="false" />     
+	
+	<cache name="findagentcache" maxEntriesLocalHeap="10000" eternal="false" maxEntriesLocalDisk="1000"  diskSpoolBufferSizeMB="20"
+		memoryStoreEvictionPolicy="LFU" 
+		transactionalMode="off">
+		<persistence strategy="localTempSwap" />
+	</cache>
+	
+	<cache name="findAllAgentscache" maxEntriesLocalDisk="1000" maxEntriesLocalHeap="10000"  eternal="false" diskSpoolBufferSizeMB="20"
+		memoryStoreEvictionPolicy="LFU" 
+		transactionalMode="off">
+		<persistence strategy="localTempSwap" />
+	</cache>
+	
+
+</ehcache>

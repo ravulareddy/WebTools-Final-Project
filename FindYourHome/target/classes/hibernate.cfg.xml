@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/myhome</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password">password</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="hibernate.show_sql">true</property>
+  <!-- Enable the second-level cache -->    
+<property name="cache.use_second_level_cache">true</property>  
+   <property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property>  
+  
+  <mapping class="com.neu.myhome.pojo.Person"/>
+  <mapping class="com.neu.myhome.pojo.Buyer"/>
+    <mapping class="com.neu.myhome.pojo.Owner"/>
+     <mapping class="com.neu.myhome.pojo.Agent"/>
+     <mapping class="com.neu.myhome.pojo.Admin"/>
+     
+ <!-- 
+      <mapping class="com.neu.myhome.pojo.UserTypes"/>
+      <mapping class="com.neu.myhome.pojo.UserNew"/> 
+      <mapping class="com.neu.myhome.pojo.PropertyListing"/>      
+ --> 
+ <mapping class="com.neu.myhome.pojo.Listing"/>
+  <mapping class="com.neu.myhome.pojo.Property"/>
+  <mapping class="com.neu.myhome.pojo.HomeAddress"/>
+  <mapping class="com.neu.myhome.pojo.PropertyFeatures"/>
+  <mapping class="com.neu.myhome.pojo.PropertyListingCategory"/>
+  <mapping class="com.neu.myhome.pojo.PropertyType"/>
+  
+  
+  
+    </session-factory>
+</hibernate-configuration>

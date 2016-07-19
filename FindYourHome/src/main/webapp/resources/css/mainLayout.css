@@ -1,0 +1,194 @@
+html {
+	margin: 0;
+	padding: 0;
+	
+}
+
+body {
+	width: 100%;
+	margin: 10px auto;
+	font: 10pt/1.5em Helvetica,"Helvetica neue", Arial, sans-serif;
+/*	background: #f9f8fa */
+	}
+	
+#home 
+{
+background: #9f89fe url(../images/bck-home.jpg) center ;	
+}	
+
+#mainIFrame
+{
+	background-image: url(../images/bck-home_new.jpg);
+    background-repeat: no-repeat;
+   	width:1100px;
+   	height:600px;
+   
+}
+
+header,section,article,aside,footer{
+	display: block;
+}
+header h1
+{
+text-align: center;	
+}
+h1
+{
+margin-left: 40px;		
+}
+nav
+{
+display:inline-block;
+margin-left: 10px;	
+}
+
+nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0px;
+	}
+
+nav ul li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+	
+}
+
+nav li a {
+	display:block;
+	min-width:160px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #9f89fe;
+	text-decoration: none;
+}
+
+nav li:hover a {
+	background: #8000ff;
+}
+
+nav li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+nav li:hover ul a:hover {
+	background: #8000ff;
+	color: #fff;
+}
+
+nav li ul {
+	display: none;
+	position:absolute;
+	z-index: 100;
+}
+
+nav li ul li {
+	display: block;
+	float: none;
+}
+
+nav li ul li a {
+	width: auto;
+	min-width: 80px;
+	padding: 0 10px;
+}
+
+nav ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+nav @media screen and (max-width : 760px){
+	ul {
+		position: static;
+		display: none;
+	}
+	li {
+		margin-bottom: 1px;
+	}
+	ul li, li a {
+		width: 100%;
+	}
+}
+#search {
+    width: 357px;
+    
+}
+#search_text{
+    width: 297px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    border: 0 none;
+    height: 50px;
+    margin-right: 0;
+    color: white;
+    outline: none;
+    background: #9f89fe;
+    float: left;
+    box-sizing: border-box;
+    transition: all 0.15s;
+}
+
+#search_text:focus {
+    background: #8000ff;
+}
+#search_button {
+    border: 0 none;
+    background: #8000ff;
+    background-image: url(../images/search.png) center no-repeat;
+    width: 60px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    cursor: pointer;
+}
+
+section{
+	float: left;
+	width: 80%;
+	padding-left: 20px;
+	margin: 10px 0 40px 0px;
+	position: relative;
+}
+section ul
+{
+list-style: none;	
+}
+footer{
+	clear:both !important;
+	width:100%;
+	bottom: 0px;
+	color:white;
+	position:relative;
+	background: #9f89fe;
+}
+table
+{
+    width: 800px;
+    border-spacing: 2px;
+}
+.errors{
+	color:red;
+}
+
+.button {
+    background-color: #9f89fe; 
+    border-radius: 4px;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    font-size: 16px;
+}
+.homeimg
+{
+background: #9f89fe url(../images/bck-home.jpg) center ;
+width: 1200px; 
+height:200px;
+
+}

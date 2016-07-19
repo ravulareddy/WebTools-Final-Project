@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="userValidator" class="com.neu.myhome.validation.UserValidator"></bean>
+	<bean id="loginFormValidator" class="com.neu.myhome.validation.LoginFormValidatior"></bean>
+	<bean id="homeValidator" class="com.neu.myhome.validation.HomeValidator"></bean>
+	<bean id="propListingValidator" class="com.neu.myhome.validation.PropertyListingValidator"></bean>
+	<bean id="propListingCategoryValidator" class="com.neu.myhome.validation.PropertyListingCategoryValidator"></bean>
+	<bean id="propertyFeatureValidator" class="com.neu.myhome.validation.PropertyFeatureValidator"></bean>
+	<bean id="propertyTypeValidator" class="com.neu.myhome.validation.PropertyTypeValidator"></bean>
+	
+		
+<!-- 	<bean id="properListingDAO" class="com.neu.myhome.dao.ProperListingDAO"/>	 -->
+<!-- <bean id="displayPropListingDAO" class="com.neu.myhome.dao.DisplayPropertyListingDAO"/>  -->
+		
+</beans>

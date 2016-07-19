@@ -1,0 +1,179 @@
+html, body
+{
+background-image: url("home.png");	
+padding: 0;
+margin: 0;
+}
+header
+{
+width:100%;	
+}
+h1
+{
+font-family:sans-serif;
+font-size: x-large;
+background-color: purple;
+color: white;
+text-align: center;
+width:100%;
+	
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0px;
+	position: fixed;
+	
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+	
+}
+/*Style for menu links*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 10%;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #6666ff;
+	text-decoration: none;
+	
+}
+
+/*Hover state for top level links*/
+li:hover a {
+	background: #8000ff;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #8000ff;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+}
+
+/* For Search Box */
+
+#search {
+    width: 357px;
+    
+}
+#search_text{
+    width: 297px;
+    padding: 15px 0 15px 20px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    border: 0 none;
+    height: 50px;
+    margin-right: 0;
+    color: white;
+    outline: none;
+    background: #6666ff;
+    float: left;
+    box-sizing: border-box;
+    transition: all 0.15s;
+}
+
+#search_text:focus {
+    background: #8000ff;
+}
+#search_button {
+    border: 0 none;
+    background: #8000ff; url(search.png) center no-repeat;
+    width: 60px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    cursor: pointer;
+}
+/* End of Search */
+
+ footer {
+ background-color:#6666ff;
+ color:white;
+ width: 100%;
+ bottom: 0px;
+ height:10%;
+ position: fixed;           
+        }
+section
+{
+ width:100%;
+ height:70%;
+ bottom:10%;
+ top:10%;
+ position:relative;
+ background-image: url("/images/bck-home.jpg");
+ }
+ 
+table {
+    display: block;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit
+}     
+
+
+ 

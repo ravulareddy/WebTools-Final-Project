@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="base.definition"  
+        template="/WEB-INF/views/tiles_layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/views/tilesLayout/header.jsp" /> 
+        <put-attribute name="navMenu" value="/WEB-INF/views/tilesLayout/menu.jsp" />  
+        <put-attribute name="sideMenu" value="/WEB-INF/views/tilesLayout/sidemenu.jsp" />  
+       	<put-attribute name="search" value=""/>
+        <put-attribute name="mainContent" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/views/tilesLayout/footer.jsp" />  
+    </definition>  
+    
+    <definition name="plain.base.definition"  
+        template="/WEB-INF/views/tiles_plain_layout.jsp">  
+        <put-attribute name="plain_title" value="" />  
+        <put-attribute name="plainContent" value="" />  
+        
+    </definition>  
+    
+    <definition name="mainContent" extends="base.definition">
+    	<put-attribute name="title" value="Home Page" />
+    	<put-attribute name="mainContent" value="/WEB-INF/views/mainContent.jsp"></put-attribute>
+   		<put-attribute name="search" value="/WEB-INF/views/tilesLayout/search.jsp"/>
+    </definition>
+  
+  <definition name="logout" extends="base.definition">  
+        <put-attribute name="title" value="Logout Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/logout.jsp" />  
+    </definition> 
+  
+  <definition name="signIn_Form" extends="base.definition">  
+        <put-attribute name="title" value="Sign Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/signIn_Form.jsp" />  
+    </definition> 
+    
+      <definition name="signIn_success" extends="base.definition">  
+        <put-attribute name="title" value="Sign In Successfull" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/signInSuccess.jsp" />  
+    </definition>  
+    
+    <definition name="login_Form" extends="base.definition">  
+        <put-attribute name="title" value="Login Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/loginForm.jsp" />  
+    </definition>  
+    
+    <definition name="login_success" extends="base.definition">  
+        <put-attribute name="title" value="Login Success Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/login_success.jsp" />  
+    </definition> 
+     
+      <definition name="login_admin" extends="base.definition">  
+        <put-attribute name="title" value="Login Success Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/login_admin.jsp" />  
+    </definition>  
+    
+     <definition name="login_buyer" extends="base.definition">  
+        <put-attribute name="title" value="Login Success Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/login_buyer.jsp" />  
+    </definition> 
+    
+     <definition name="login_owner" extends="base.definition">  
+        <put-attribute name="title" value="Login Success Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/login_owner.jsp" />  
+    </definition> 
+    
+    
+         <definition name="updateProfile" extends="base.definition">  
+        <put-attribute name="title" value="Update Profile" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/updateProfile.jsp" />  
+    </definition> 
+    
+      <definition name="login_agent" extends="base.definition">  
+        <put-attribute name="title" value="Login Success Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/login_agent.jsp" />  
+    </definition> 
+    
+          <definition name="displayAllAgents" extends="base.definition">  
+        <put-attribute name="title" value="Display All Agents" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/displayAllAgents.jsp" />  
+    </definition> 
+    
+    
+    <definition name="property_List" extends="base.definition">  
+        <put-attribute name="title" value="Add new Property Listing" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/AddPropertyListing.jsp" />  
+    </definition>   
+    
+     <definition name="propertyList" extends="base.definition">  
+        <put-attribute name="title" value="Add new Property Listing" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/propertyList.jsp" />  
+    </definition>   
+    
+    <definition name="addPropertyList_success" extends="base.definition">  
+        <put-attribute name="title" value="Add new Property Listing" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/AddPropertyListing_Sucess.jsp" />  
+    </definition> 
+    
+    <definition name="rent_apartment" extends="base.definition">  
+        <put-attribute name="title" value="Apartments For Rent" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/rent_apartment.jsp" />  
+    </definition>
+    
+       <definition name="searchHomeResult" extends="base.definition">  
+        <put-attribute name="title" value="Apartments For Rent" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/searchButtonResult.jsp" />  
+    </definition>
+    
+    
+    
+    <definition name="findAgent" extends="base.definition">  
+        <put-attribute name="title" value="Find an Agent" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/findAgent.jsp" />  
+    </definition>  
+    
+     <definition name="findAgent" extends="base.definition">  
+        <put-attribute name="title" value="Find an Agent" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/findAgent.jsp" />  
+    </definition>
+    
+     <definition name="buy_luxuryHome" extends="base.definition">  
+        <put-attribute name="title" value="Find an Agent" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/buy_luxuryHome.jsp" />  
+    </definition>
+    
+      <definition name="displayerror" extends="base.definition">  
+        <put-attribute name="title" value="Error Displaying Results" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/displayerror.jsp" />  
+    </definition>
+    
+     <definition name="buy_searchAllHomesResult" extends="base.definition">  
+        <put-attribute name="title" value="Displaying Results Of All Homes For Sale" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/buy_searchAllHomesResult.jsp" />  
+    </definition>
+    
+       <definition name="buy_searchByCriteria" extends="base.definition">  
+        <put-attribute name="title" value="Displaying Results Of All Homes For Search Criteria" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/buy_searchByCriteria.jsp" />  
+    </definition>
+    
+    
+    
+        <definition name="displaysuccessMsg" extends="base.definition">  
+        <put-attribute name="title" value="Displaying Success Message" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/displaysuccessMsg.jsp" />  
+    </definition>
+    
+  <!--    <definition name="displayAjaxAgent" extends="base.definition">  
+     <put-attribute name="mainContent" value="/WEB-INF/views/displayAjaxAgent.jsp" />
+    </definition> -->
+    
+    
+     <definition name="addPropertyFeatures" extends="base.definition">  
+        <put-attribute name="title" value="Add Property Features" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/addPropertyFeatures.jsp" />  
+    </definition> 
+    
+    <definition name="createlistingCategories" extends="base.definition"> 
+         <put-attribute name="title" value="Add Property Listing Categories" />   
+         <put-attribute name="mainContent" value="/WEB-INF/views/createlistingCategories.jsp" />  
+    </definition> 
+    
+    <definition name="createPropType" extends="base.definition">  
+        <put-attribute name="title" value="Add Property Types" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/createPropType.jsp" />  
+    </definition>
+    
+    <definition name="savedHomes" extends="base.definition">  
+        <put-attribute name="title" value="Saved Homes" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/savedHomes.jsp" />  
+    </definition>
+    
+    <definition name="contact" extends="base.definition">  
+        <put-attribute name="title" value="Contact Form" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/contact.jsp" />  
+    </definition>
+    
+    <definition name="displayAjaxAgent" extends="plain.base.definition">  
+     <put-attribute name="plainContent" value="/WEB-INF/views/displayAjaxAgent.jsp" />
+    </definition>
+    
+    <definition name="homePage" extends="base.definition">  
+        <put-attribute name="title" value="Login Success Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/home.jsp" />  
+    </definition>  
+  
+  	<definition name="error" extends="base.definition">  
+        <put-attribute name="title" value="Login Success Page" />  
+        <put-attribute name="mainContent" value="/WEB-INF/views/error.jsp" />  
+    </definition>  
+  
+  
+</tiles-definitions>  
